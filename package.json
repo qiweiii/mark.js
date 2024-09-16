@@ -1,6 +1,6 @@
 {
-  "name": "mark.js",
-  "version": "9.0.0",
+  "name": "@qw/mark.js",
+  "version": "9.0.1",
   "keywords": [
     "mark.js",
     "markjs",
@@ -17,14 +17,14 @@
   "license": "MIT",
   "homepage": "https://markjs.io/",
   "author": {
-    "name": "Julian Kühnel",
-    "url": "https://github.com/julmot"
+    "name": "qiwei",
+    "url": "https://github.com/qiweiii"
   },
   "description": "Highlight keywords using JavaScript. Intended for every use case. Can e.g. be used to mark text in search results.",
   "main": "dist/mark.js",
-  "repository": "julmot/mark.js",
+  "repository": "qiweiii/mark.js",
   "bugs": {
-    "url": "https://github.com/julmot/mark.js/issues"
+    "url": "https://github.com/qiweiii/mark.js/issues"
   },
   "scripts": {
     "eslint": "eslint src/ test/",
