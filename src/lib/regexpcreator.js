@@ -378,7 +378,7 @@ class RegExpCreator {
         lsJoin = '\\s' + (lsJoin ? lsJoin : this.escapeStr(chars));
         return `()([^${lsJoin}]*${str}[^${lsJoin}]*)`;
       case 'exactly':
-        return `(^|\\s${lsJoin})(${str})(?=$|\\s${lsJoin})`;
+        return `(^|\\s|\\b${lsJoin})(${str})(?=$|\\s${lsJoin})`;
     }
   }
 }

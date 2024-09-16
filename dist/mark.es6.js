@@ -1,7 +1,7 @@
 /*!***************************************************
 * mark.js v9.0.0
 * https://markjs.io/
-* Copyright (c) 2014–2018, Julian Kühnel
+* Copyright (c) 2014–2024, Julian Kühnel
 * Released under the MIT license https://git.io/vwTVl
 *****************************************************/
 
@@ -470,7 +470,7 @@
           lsJoin = '\\s' + (lsJoin ? lsJoin : this.escapeStr(chars));
           return `()([^${lsJoin}]*${str}[^${lsJoin}]*)`;
         case 'exactly':
-          return `(^|\\s${lsJoin})(${str})(?=$|\\s${lsJoin})`;
+          return `(^|\\s|\\b${lsJoin})(${str})(?=$|\\s${lsJoin})`;
       }
     }
   }
@@ -727,7 +727,7 @@
             (match = regex.exec(node.textContent)) !== null &&
             match[matchIdx] !== ''
           ) {
-            if (this.opt.separateGroups) {
+            if (this.opt.separateGroups && match.length !== 1){
               node = this.separateGroups(
                 node,
                 match,

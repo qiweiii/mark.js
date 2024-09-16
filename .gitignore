@@ -18,3 +18,7 @@ sc-karma*.log
 # Build
 build/doc/
 build/coverage/
+
+
+dist/
+build/
