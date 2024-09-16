@@ -1,14 +1,14 @@
 /*!***************************************************
-* mark.js v9.0.0
+* qw-mark.js v9.0.2
 * https://markjs.io/
-* Copyright (c) 2014–2024, Julian Kühnel
+* Copyright (c) 2014–2024, qiwei
 * Released under the MIT license https://git.io/vwTVl
 *****************************************************/
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery')) :
   typeof define === 'function' && define.amd ? define(['jquery'], factory) :
-  (global.Mark = factory(global.jQuery));
+  (global['Qw-mark'] = factory(global.jQuery));
 }(this, (function ($) { 'use strict';
 
   $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
